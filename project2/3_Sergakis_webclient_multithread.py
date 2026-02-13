@@ -14,11 +14,11 @@ def main():
         clientSocket = socket(AF_INET, SOCK_STREAM)
         clientSocket.connect((host, port))
 
-        # Format GET request
+        # GET request
         header = f"GET /{filename} HTTP/1.1\r\nHost: {host}\r\n\r\n"
         clientSocket.send(header.encode())
 
-        # Buffer the response
+        # Buffer
         response = b""
         while True:
             data = clientSocket.recv(1024)
