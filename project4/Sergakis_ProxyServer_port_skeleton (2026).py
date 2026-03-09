@@ -4,8 +4,8 @@ import os
 import threading
 
 # Define the host and port for the proxy server
-PROXY_HOST = '35.9.34.151'
-PROXY_PORT = 8888
+PROXY_HOST = '127.0.0.1'
+PROXY_PORT = 8886
 
 # List to store active client connections for clean-up
 active_connections = []
