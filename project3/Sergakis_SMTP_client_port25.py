@@ -32,7 +32,7 @@ if recv1[:3] != '250':
 
 # Send MAIL FROM command and print server response.
 # Fill in start
-mailFrom = "MAIL FROM: <fischermanjoe@egr.msu.edu>\r\n"
+mailFrom = "MAIL FROM: <fischermanjoe@msu.edu>\r\n"
 clientSocket.send(mailFrom.encode())
 recv2 = clientSocket.recv(1024).decode()
 print(recv2)
